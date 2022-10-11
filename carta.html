@@ -16,23 +16,23 @@
 </head>
 
 <body>
-    <nav class="container-navbar">
+    <header class="nav-header">
         <span class="title-nav">Cucina Gourmet</span>
-        <ul class="list-nav">
-            <li class="nav2">
-                <a href="./index.html"> INICIO </a>
-            </li>
-            <li class="nav">
-                <a href="./carta.html">CARTA</a>
-            </li>
-            <li class="nav2">
-                <a href="./reservation.html">RESERVAS</a>
-            </li>
-            <li class="nav">
-                <a href="./FAQ.html">PREGUNTAS FRECUENTES</a>
-            </li>
-        </ul>
-    </nav>
+        <nav id="nav" class="main-nav">
+            <div class="list-nav">
+                <a class="link-item" href="./index.html">INICIO</a>
+              <a class="link-item" href="./carta.html">CARTA</a>
+              <a class="link-item" href="./">RESERVAS</a>
+              <a class="link-item" href="./FAQ.html">PREGUNTAS FRECUENTES</a>
+            </div>
+          </nav>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+    </header>
 
     <h1 class="title-cart">Nuestra Carta</h1>
     <!-- <hr class="cart-line"> -->
@@ -375,12 +375,10 @@
 
             <div class="container-icons">
                 <ul>
+                    <li class="contact">Trabaja con nosotros!</li>
                     <li class="contact">Contacto general</li>
                     <a class="mail" href="mailto:cucinagourmet@gmail.com">cucinagourmet@gmail.com</a>
                 </ul>
-                <!-- <div class="aviso">Aviso legal<br>
-                    <!-- <span class="aviso texto">Las empresas aquí mencionadas no tienen relación jurídica ni económica -ni entre sí ni respecto de otra sociedad o individuo alguno más allá de la coordinación de esfuerzos y estrategias de marketing que aquí se exponen.</span>
-                    </div><br>!-->
                 <div class="icons">
                     <a href="https://facebook.com/" target="_blank">
                         <i class="fa-brands fa-facebook icons"></i>
@@ -398,6 +396,7 @@
 
     </footer>
     <div class="copyright">Copyright @ 2022</div>
+    <script src="./main.js"></script>
 </body>
 
 </html>

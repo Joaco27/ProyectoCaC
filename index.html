@@ -16,20 +16,22 @@
 </head>
 
 <body>
-    <nav class="container-navbar">
+    <header class="nav-header">
         <span class="title-nav">Cucina Gourmet</span>
-        <ul class="list-nav">
-            <li class="nav">
-                <a href="./carta.html">CARTA</a>
-            </li>
-            <li class="nav2">
-                <a href="./reservation.html">RESERVAS</a>
-            </li>
-            <li class="nav">
-                <a href="./FAQ.html">PREGUNTAS FRECUENTES</a>
-            </li>
-        </ul>
-    </nav>
+        <nav id="nav" class="main-nav">
+            <div class="list-nav">
+                <a class="link-item" href="./carta.html">CARTA</a>
+                <a class="link-item" href="./">RESERVAS</a>
+                <a class="link-item" href="./FAQ.html">PREGUNTAS FRECUENTES</a>
+            </div>
+        </nav>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
     <div class="slider-frame">
         <ul>
@@ -40,25 +42,93 @@
             <li><img src="images/slider5.jpg"></li>
         </ul>
     </div>
-
-    <div class="container-chef">
-        <div>
-            <img src="images/jodri-cruz-mas-masterchef-chef-thinking-heads-conferenciante.jpg" height="300px" width="300">
+    <section class="grid">
+        <div class="about-grid">
+            <h1 class="about-title">Sobre nosotros</h1>
         </div>
-        <div>
-            <h1 class="chef-title">Nuestro Chef</h1>
-            <p class="chef-text">Jordi Cruz nació en Manresa (Barcelona) en 1978 y realizó sus estudios de cocina en la Escuela Superior de Hostelería, Joviat, de la misma ciudad. A los 14 años empezó a trabajar en el restaurante Estany Clar de Cercs (Barcelona), establecimiento donde recibió su primera estrella Michelin en noviembre de 2002, convirtiéndose a sus 24 años en el chef más joven del país y el segundo del mundo en recibir esta distinción. Desde ese momento se convirtió en una firme promesa dentro del panorama culinario español. Paralelamente a su trabajo entre fogones, cabe destacar que es autor de 6 libros de gastronomía:  Cocina con lógica,  Grandes platos para todos los días, El cocinero tenaz, Cocina en casa como un chef, ABaC Cocina en evolución y Tapas con Rock n'Roll.
-            </p>
+        <div class="about-text">
+            <div class="about-flex">
+                <p>
+                    En nuestro ADN predomina la creatividad.
+                    <br>
+                    Buscamos brindarle a nuestros clientes un producto y una
+                    experiencia excepcional. Intentamos abrir nuevas sendas teniendo claro que nosotros no empezamos
+                    el
+                    camino.
+                    <br>
+                    Buscamos mantener nuestras raíces y costumbres.
+                    <br>
+                    En la carta no faltan los clasicos, siempre
+                    seguidas por propuestas innovadoras y sobre todo, sabrosas.
+                </p>
+                <br>
+                <p>Extraemos criterio, sabor y coherencia que transmitimos en nuestros platos. De todo lo que habita
+                    en
+                    la memoria, hacemos destacar aquellos sabores que nos tocan el corazon utilizando materia prima
+                    de
+                    alta calidad acompaniados de tecnicas culinarias de vanguardia. Nuestra cocina, no quiere ser
+                    pretenciosa pero sí singular. Nos reinventamos para sorprender a nuestros comensales. Las muchas
+                    horas tras fuego, cuchara y degustaciones nos llevan a hacer algo diferente, crear nuestro
+                    propio
+                    discurso.</p>
+                <br>
+                <p> Tenemos claro que, lo que nosotros hacemos, no se puede comer en otro lugar del mundo. </p>
+                <button class="button-cart"><a href="./carta.html">Conoce nuestra carta!</a></button>
+            </div>
         </div>
-    </div>
-    <div class="about-us">
-        <br>
-        <h1>About Us</h1>
-        <p>Nuestro ADN es creativo, intentamos abrir nuevas sendas teniendo claro que nosotros no empezamos el camino. Del trabajo realizado por muchos, extraemos criterio, sabor y coherencia. De todo lo que habita en la memoria, sacamos lo necesario para poder razonar con lógica. Avanzamos desde el respeto que nos da todo lo que ya se ha hecho y desde ese punto exacto, podemos llegar a entender qué es realmente nuevo. Nuestra cocina, no quiere ser pretenciosa pero sí  singular. Sentimos la necesidad de reinventarnos, de sorprendernos. Las muchas horas tras fuego, cuchara y cazuela nos llevan a hacer algo diferente, crear nuestro propio discurso y hacerlo con palabras sabidas y otras muchas nuevas. No pretendemos ser únicos o relucientes como estrellas fugaces, pero tenemos claro que, lo que nosotros hacemos, no se puede comer en otro lugar del mundo. </p>
-        <br>
-    </div>
+        <div class="about-img">
+            <img
+                src="https://res.cloudinary.com/dx05ruehm/image/upload/v1665029615/Proyecto%20Cac/cordafamgg-vitchakorn-LFZYtKdkExU-unsplash_lxrhrw.jpg">
+        </div>
+        <div class="place-img">
+            <img
+                src="https://res.cloudinary.com/dx05ruehm/image/upload/v1665024424/Proyecto%20Cac/igor-rand-wfM1Fi-kMaY-unsplash_m86yeb.jpg">
+        </div>
+        <div class="place-grid">
+            <h1 class="place-title">Nuesto lugar</h1>
+            <p class="place-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio commodi quis
+                explicabo beatae libero pariatur velit, adipisci eum exercitationem harum, aspernatur voluptatum dicta
+                obcaecati saepe officiis perspiciatis inventore ducimus reiciendis. Lorem ipsum dolor sit, amet
+                consectet adipisicing elit. Sunt inventore rerum facere quisquam perspiciatis optio eligendi recusanda
+                voluptate laboriosam possimus quia debitis fugit, eum at ipsum fuga vero deleniti blanditiis? Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. At atque architecto vero delectus facilis recusandae
+                officia molestiae similique perspiciatis! Eum commodi error quasi accusamus possimus excepturi
+                architecto vitae cupiditate reiciendis.</p>
+        </div>
+        <div class="chef-img">
+            <img
+                src="https://res.cloudinary.com/dx05ruehm/image/upload/v1665015620/Proyecto%20Cac/sebastian-coman-photography-eBmyH7oO5wY-unsplash_dcmkhg.jpg">
+        </div>
+        <div class="chef-grid">
+            <div class="chef-flex">
+                <h1 class="chef-title">Nuestro Equipo</h1>
+                <p class="chef-text"> Un equipo con más de 45 años de experiencia y dinámico trabaja día a día para que
+                    Cucina Gourmet sea siempre tu mejor elección. Momentos cuidados al más mínimo detalle para conseguir
+                    que se respire la esencia de una mesa con propuestas tradicionales, rodeada de amigos y buena
+                    comida.
+                </p>
+                <br>
+                <p class="chef-text">JordeCruz nació en Manresa (Barcelona) en 1978 y realizó sus estudios de cocina en
+                    la Escuela Superior de Hostelería, Joviat, de la misma ciudad.
+                    <br>
+                    A los 14 años empezó a trabajar en el restaurante Estany Clar de Cercs (Barcelona), establecimiento
+                    donde recibió su primera estrella
+                    Michelin en noviembre de 2002, convirtiéndose a sus 24 años en el chef más joven del país y el
+                    segundo del mundo en recibir esta distinción.
+                    <br>
+                    Desde ese momento se convirtió en una firme promesa dentro del panorama culinario español. Hoy
+                    nuestro chef estrella.
+                </p>
+                <br>
+                <p class="chef-text"> Paralelamente a su trabajo entre fogones, cabe destacar que es autor de 6 libros
+                    de gastronomía: <i>"Cocina con lógica", "Grandes platos para todos los días", "El cocinero tenaz",
+                        "Cocina en casa como un chef", "ABC Cocina en evolución" y "Tapas con Rock n'Roll".</i>
+                </p>
+                <button class="button-cart"><a href="./reservation.html">Realiza una reserva!</a></button>
+            </div>
+        </div>
+    </section>
 
-    
     <footer>
         <div class="container-footer">
 
@@ -70,25 +140,23 @@
                 <p class="dir">Sucursales</p>
                 <ul>
                     <li>La Plata</li>
-                    <li>Calle 58 #1282</li>
+                    <li>Calle 58 1282</li>
                     <li>Tel: (0221) 434-4908</li>
                 </ul>
                 <br>
                 <ul>
                     <li>Capital Federal</li>
-                    <li>Una direccion</li>
-                    <li>Un telefono</li>
+                    <li>Uruguay 2390</li>
+                    <li>Tel: (011) 4754-8458</li>
                 </ul>
             </div>
 
             <div class="container-icons">
                 <ul>
+                    <li class="contact">Trabaja con nosotros!</li>
                     <li class="contact">Contacto general</li>
                     <a class="mail" href="mailto:cucinagourmet@gmail.com">cucinagourmet@gmail.com</a>
                 </ul>
-                <!-- <div class="aviso">Aviso legal<br>
-                    <!-- <span class="aviso texto">Las empresas aquí mencionadas no tienen relación jurídica ni económica -ni entre sí ni respecto de otra sociedad o individuo alguno más allá de la coordinación de esfuerzos y estrategias de marketing que aquí se exponen.</span>
-                    </div><br>!-->
                 <div class="icons">
                     <a href="https://facebook.com/" target="_blank">
                         <i class="fa-brands fa-facebook icons"></i>
@@ -103,9 +171,10 @@
             </div>
         </div>
 
-        
+
     </footer>
     <div class="copyright">Copyright @ 2022</div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
