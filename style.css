@@ -9,7 +9,7 @@
     --main-font: 'Great Vibes', cursive;
     --text-font: 'Source Sans Pro', sans-serif;
     --main-color: #4C0013;
-    --text-color: #FFF4F4;
+    --text-color: white;
     --text-subcolor: black;
 }
 
@@ -148,7 +148,13 @@
         margin-top: 0;
         margin-right: 2rem;
     }
+    
+    
+
 }
+
+
+    
 
 /* CARROUSEL */
 
@@ -375,10 +381,12 @@
     align-items: stretch;
     justify-content: space-between;
     height: 200px;
-    background-color: #FFF4F4
+    background-color: var(--text-color)
         /*  margin: 30vw 1vw auto 1vw */
     ;
 }
+
+
 
 .title {
     font-family: var(--main-font);
@@ -391,6 +399,8 @@
     padding-top: 80px;
     /* margin: auto; */
 }
+
+
 
 .container-title2 {
     width: 33%;
@@ -413,7 +423,7 @@
 
 .icons {
     margin-top: 1vw;
-    font-size: 2vw;
+    font-size: 1.5rem;
     color: var(--text-subcolor);
 }
 
@@ -430,8 +440,7 @@
 }
 
 .copyright {
-    background-color: var(--main-color);
-    color: var(--text-color);
+    color: black;
     text-align: center;
 }
 
@@ -440,13 +449,40 @@
     font-family: var(--text-font);
 }
 
+@media screen and (max-width: 768px)  {
+    
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .container-footer>div{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        margin: auto;   
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+} 
+
 /* SECCION CARTA */
 .title-cart {
     padding: 3vw 0vw 0vw 2vw;
     font-family: var(--main-font);
     text-align: center;
     font-size: 3rem;
-    background-color: #FFF4F4;
+    background-color: var(--text-color);
 }
 
 .title-cart:before {
@@ -465,7 +501,7 @@
     font-family: var(--text-font);
     font-weight: 700;
     color: var(--text-subcolor);
-    background-color: #FFF4F4;
+    background-color: var(--text-color);
 }
 
 .container-food {
@@ -549,7 +585,7 @@
 
 /* DESCRIPCION DE PLATOS */
 section {
-    background-color: #FFF4F4;
+    background-color: var(--text-color);
 }
 
 .container-options {
@@ -646,4 +682,67 @@ section {
 
 .bloque.activo .contenido {
     height: auto;
+}
+
+/* SECCION RESERVATION */
+
+.container-reservation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    color: var(--text-subcolor);
+    font-family: var(--text-font);
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: var(--text-color);
+}
+
+.container-text {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+h5.text-title {
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1vw;
+}
+
+p.reservas-text {
+    font-family: var(--text-font);
+    text-align: center;
+    padding: 3vw;
+    font-size: 1.2vw;
+}
+
+.container-form, form {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.input-group,.apDes {
+    background-color: #4C0013;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 2vw 1vw;
+    width: 70%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.title-cart {
+    text-align: center;
 }
